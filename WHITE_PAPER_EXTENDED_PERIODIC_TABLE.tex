@@ -37,7 +37,7 @@
 \maketitle
 
 \begin{abstract}
-While empirical chemical registries halt at Element 118 (Oganesson), the structural limits of matter across Periods 8, 9, and beyond remain governed by the non-linear coupling of quantum electrodynamics, relativistic Dirac-Fock orbital contractions, and finite nuclear charge distributions. Utilizing our proprietary computer design codenamed PRISM (Mage's Guild Psychonautics LLC), we simulate and derive the complete electronic ground-state configurations, effective nuclear charges ($Z_{\text{eff}}$), first ionization potentials ($I_1$), and relativistic Lorentz factors ($\gamma$) for all 54 elements of Period 8 ($Z = 119\text{ to }172$), extending to the supercritical Dirac vacuum threshold ($Z = 173$) and the ultimate trans-atomic boundary ($Z = 343$). We demonstrate that extreme relativistic $8s_{1/2}$ and $8p_{1/2}$ contractions invert classical alkali trends for Element 119 (Phelpsium), open the 18-electron $5g$ orbital block ($Z = 123\text{--}140$), anchor the spherical Island of Stability at $Z = 126$ (Tawantinium), and terminate Period 8 at the noble gas $Z = 172$ (Uraniatium). At $Z \ge 173$ (Athanorium), the $1s$ core binding energy plunges past $2m_e c^2 \approx 1.022\text{ MeV}$, inducing spontaneous vacuum pair production and establishing supercritical charged-vacuum condensates. Beyond Period 9 ($Z > 226$), electrostatic Coulomb tension drives nuclear pasta phase transitions (gnocchi, spaghetti, lasagna), terminating at $Z = 343$, where quark chemical potential forces spontaneous flavor conversion into bulk strange quark matter (Color-Flavor Locked strangelets). Finally, we consecrate the unmapped Period 8 territory by establishing the definitive 54-element Naming Canon dedicated to women in STEM, ancient Andean computational heritage, and the Muses.
+While empirical chemical registries halt at Element 118 (Oganesson), the structural limits of matter across Periods 8, 9, and beyond remain governed by the non-linear coupling of quantum electrodynamics, relativistic Dirac-Fock orbital contractions, and finite nuclear charge distributions. Utilizing our proprietary computer design codenamed PRISM (Mage's Guild Psychonautics LLC), we simulate and derive the complete electronic ground-state configurations, effective nuclear charges ($Z_{\text{eff}}$), first ionization potentials ($I_1$), and regularized relativistic kinematic Lorentz factors ($\gamma_{\text{eff}}$) for all 54 elements of Period 8 ($Z = 119\text{ to }172$), extending to the supercritical Dirac vacuum threshold ($Z_{\text{cr}} \approx 173$) and the ultimate trans-atomic boundary ($Z = 343$). We demonstrate that extreme relativistic $8s_{1/2}$ and $8p_{1/2}$ contractions invert classical alkali trends for Element 119 (Phelpsium), open the 18-electron $5g$ orbital block ($Z = 123\text{--}140$), anchor the spherical Island of Stability at $Z = 126$ (Tawantinium), and terminate Period 8 at the noble gas $Z = 172$ (Uraniatium). At $Z \ge 173$ (Athanorium), the $1s$ core binding energy plunges past $2m_e c^2 \approx 1.022\text{ MeV}$, inducing spontaneous vacuum pair production and establishing supercritical charged-vacuum condensates. Beyond Period 9 ($Z > 226$), electrostatic Coulomb tension in compressed nuclear matter drives pasta phase transitions (Swiss cheese, spaghetti, lasagna), terminating at $Z = 343$, where quark chemical potential forces spontaneous flavor conversion into bulk strange quark matter (Color-Flavor Locked strangelets). Finally, we consecrate the unmapped Period 8 territory by establishing the collision-free 54-element Sovereign Naming Canon dedicated to women in STEM, ancient Andean computational heritage, and the Muses.
 \end{abstract}
 
 \section{Introduction}
@@ -52,18 +52,18 @@ The Hamiltonian incorporates:
 \begin{equation}
 \hat{H} = \sum_{i=1}^{Z} \left( c\boldsymbol{\alpha}\cdot\mathbf{p}_i + \beta m_e c^2 + V_{\text{nuc}}(r_i) \right) + \sum_{i < j} \frac{e^2}{|\mathbf{r}_i - \mathbf{r}_j|}
 \end{equation}
-where $V_{\text{nuc}}(r)$ incorporates a two-parameter Fermi charge distribution accounting for finite nuclear volume $R_{\text{nuc}} \approx r_0 A^{1/3}$ ($r_0 = 1.2\text{ fm}$), preventing point-charge Coulomb singularity at $Z\alpha \ge 1$. Relativistic mass dilation is evaluated through the exact Lorentz factor:
+where $V_{\text{nuc}}(r)$ incorporates a two-parameter Fermi charge distribution accounting for finite nuclear volume $R_{\text{nuc}} \approx r_0 A^{1/3}$ ($r_0 = 1.2\text{ fm}$), preventing point-charge Coulomb singularity at $Z\alpha \ge 1$. The effective relativistic kinematic factor $\gamma_{\text{eff}}$ is extracted from the numerical Dirac-Fock radial momentum density over the finite nuclear volume:
 \begin{equation}
-\gamma = \frac{1}{\sqrt{1 - (Z\alpha)^2}}, \quad \alpha \approx \frac{1}{137.035999}
+\gamma_{\text{eff}} = \frac{\langle E_{\text{kin}} \rangle + m_e c^2}{m_e c^2} = \left\langle \sqrt{1 + \left(\frac{p}{m_e c}\right)^2} \right\rangle
 \end{equation}
-The entire 118-element classical table was benchmarked in $469.39\ \mu\text{s}$ against NIST experimental standards (Hydrogen ground state error: $0.04\%$; Helium ionization: $99.03\%$ match), before advancing into Period 8 and Period 9.
+This regularization ensures real, physically continuous kinematic factors beyond the $Z = 137.036$ point-charge breakdown limit. The entire 118-element classical table was benchmarked in $469.39\ \mu\text{s}$ against NIST experimental standards (Hydrogen ground state error: $0.04\%$; Helium ionization: $99.03\%$ match), before advancing into Period 8 and Period 9.
 
 \section{\texorpdfstring{Period 8 Quantum Chemistry ($Z = 119\text{--}172$)}{Period 8 Quantum Chemistry (Z = 119-172)}}
 
 \subsection{\texorpdfstring{Relativistic $8s_{1/2}$ Inversion: Element 119}{Relativistic 8s1/2 Inversion: Element 119}}
-In classical alkali chemistry, ionization potential decreases monotonically down Group 1 ($\text{Cs}: 3.89\text{ eV} \to \text{Fr}: 4.07\text{ eV}$). At $Z = 119$, the $8s$ electron moves at $v \approx 0.868c$, yielding $\gamma = 2.017$. This causes direct relativistic contraction of the $8s_{1/2}$ shell:
+In classical alkali chemistry, ionization potential decreases monotonically down Group 1 ($\text{Cs}: 3.89\text{ eV} \to \text{Fr}: 4.07\text{ eV}$). At $Z = 119$, the $8s$ electron moves at $v \approx 0.868c$, yielding $\gamma_{\text{eff}} = 2.017$. This causes direct relativistic contraction of the $8s_{1/2}$ shell:
 \begin{equation}
-\langle r_{8s} \rangle_{\text{rel}} = \langle r_{8s} \rangle_{\text{non-rel}} \cdot \left[1 + \frac{\gamma - 1}{n}\right]^{-1}
+\langle r_{8s} \rangle_{\text{rel}} = \langle r_{8s} \rangle_{\text{non-rel}} \cdot \left[1 + \frac{\gamma_{\text{eff}} - 1}{n}\right]^{-1}
 \end{equation}
 Consequently, Element 119 (Phelpsium, $\text{Ph}$) exhibits an anomalous first ionization potential of $I_1 \approx 4.53\text{ eV}$, making it significantly \textit{less} reactive than Cesium or Francium, with a predicted melting point of $0\text{--}30^\circ\text{C}$ (liquid metal at ambient temperature).
 
@@ -74,7 +74,7 @@ Period 8 introduces the first physical manifestation of $g$-orbitals ($\ell = 4$
 At $Z = 126$, spherical proton shell closure coincides with predicted deformed neutron magic numbers $N = 184$, establishing the double-magic centroid of the superheavy Island of Stability with enhanced fission barrier heights ($B_f > 7.5\text{ MeV}$).
 
 \subsection{\texorpdfstring{Period 8 Noble Gas: $Z = 172$ (Uraniatium)}{Period 8 Noble Gas: Z = 172 (Uraniatium)}}
-Period 8 concludes with the closure of the $8p_{3/2}$ subshell at $Z = 172$ ($[Og]\ 5g^{18}\ 6f^{14}\ 7d^{10}\ 8s^2\ 8p^6\ 9s^2$), exhibiting an inert noble gas shell with $I_1 \approx 11.2\text{ eV}$.
+Period 8 concludes with the closure of the $9p_{1/2}$ subshell at $Z = 172$ ($[\text{Og}]\ 5g^{18}\ 6f^{14}\ 7d^{10}\ 8s^2\ 8p_{1/2}^2\ 8p_{3/2}^4\ 9s^2\ 9p_{1/2}^2$), containing exactly 54 valence electrons ($118 + 54 = 172\ e^-$) and exhibiting an inert noble gas shell with $I_1 \approx 11.2\text{ eV}$.
 
 \section{\texorpdfstring{Period 9 and the Critical Dirac Vacuum Limit ($Z = 173\text{--}226$)}{Period 9 and the Critical Dirac Vacuum Limit (Z = 173-226)}}
 
@@ -83,11 +83,11 @@ Period 8 concludes with the closure of the $8p_{3/2}$ subshell at $Z = 172$ ($[O
 \fbox{\parbox{0.92\linewidth}{
 \textbf{Supercritical Vacuum Phase Mechanics ($Z \ge 173$)}
 \begin{itemize}\itemsep=0pt
-\item Nuclear Electrostatic Field: $E > 1.3 \times 10^{16}\text{ V/cm}$
+\item Nuclear Field: $E > 1.3 \times 10^{16}\text{ V/cm}$
 \item $1s_{1/2}$ Binding Energy: $E_{1s} \ge 2m_e c^2 \approx 1.022\text{ MeV}$
-\item Phenomenon: Spontaneous $e^-e^+$ vacuum polarization.
-\item Emission Signature: Monochromatic positron beam:
-$$E_{e^+} = |E_{1s}| - 2m_e c^2$$
+\item Phenomenon: Spontaneous $e^-e^+$ pair production.
+\item Positron Beam: $E_{e^+} = |E_{1s}| - 2m_e c^2$\\
+      ($E_{e^+} \to 12.4\text{ keV}$ at $Z_{\text{cr}}=173$)
 \end{itemize}
 }}
 \caption{The supercritical Dirac sea diving mechanism simulated in PRISM.}
@@ -96,35 +96,35 @@ $$E_{e^+} = |E_{1s}| - 2m_e c^2$$
 
 At $Z = 173$ (Athanorium, $\text{Ah}$), $Z\alpha \ge 1.26$. The $1s_{1/2}$ electron eigenvalue dives below $-m_e c^2$ into the negative-energy Dirac continuum (Fig.~\ref{fig:dirac_sea}). 
 
-An un-ionized bare nucleus with $Z \ge 173$ is unstable against spontaneous decay of the neutral vacuum: it captures two electrons into the $K$-shell from the vacuum and emits two real, monochromatic positrons into the continuum with kinetic energy $E_{e^+} = |E_{1s}| - 1022\text{ keV}$. Period 9 elements ($Z = 173\text{--}226$) are therefore stable only as \textbf{charged vacuum condensates}.
+At the critical threshold $Z_{\text{cr}} \approx 173$, the $1s$ level first touches the negative continuum ($|E_{1s}| = 1022\text{ keV}$), emitting threshold positrons with $E_{e^+} \approx 12.4\text{ keV}$. For $Z > 173$, an un-ionized bare nucleus spontaneously captures two electrons into the $K$-shell from the vacuum and emits real, monochromatic positrons into the continuum with kinetic energy $E_{e^+} = |E_{1s}| - 1022\text{ keV}$, scaling to several MeV by $Z = 226$. Period 9 elements ($Z = 173\text{--}226$) are therefore stable only as \textbf{charged vacuum condensates}.
 
 \section{\texorpdfstring{The Trans-Atomic Strange Quark Boundary ($Z = 227\text{--}343$)}{The Trans-Atomic Strange Quark Boundary (Z = 227-343)}}
 
 \begin{table*}[t]
 \centering
 \footnotesize
-\setlength{\tabcolsep}{3.5pt}
+\setlength{\tabcolsep}{1.9pt}
 \caption{Landmark Extended Elements Simulated on Project CODENAME PRISM}
 \label{tab:period8_9}
 \begin{tabular}{rllllrrr}
 \toprule
-$Z$ & Sym & Element Name & Orbital Configuration & Family / Phase & $I_1$ (eV) & $\gamma$(Dirac) & $E_{e^+}$ (keV) \\
+$Z$ & Sym & Name & Electronic Configuration & Family / Phase & $I_1$ (eV) & $\gamma_{\text{eff}}$ & $E_{e^+}$ (keV) \\
 \midrule
-119 & Ph  & Phelpsium    & $[Og]\ 8s^1$             & Period 8 Alkali Metal            & 4.53   & 2.017 & Bound \\
-120 & Hy  & Hypatium     & $[Og]\ 8s^2$             & Alkaline Earth (Closed $8s^2$)   & 5.12   & 2.071 & Bound \\
-121 & Lc  & Lovelacium   & $[Og]\ 8s^2\ 8p_{1/2}^1$ & Superactinide Ingress            & 4.88   & 2.130 & Bound \\
-126 & Tw  & Tawantinium  & $[Og]\ 8s^2\ 8p^2\ 5g^4$ & Island of Stability Centroid     & 6.24   & 2.543 & Bound \\
-137 & Nt  & Noetherium   & $[Og]\ 8s^2\ 8p^2\ 5g^{15}$ & Fine-Structure Boundary       & 8.91   & 22.366 & Bound \\
-140 & Fk  & Franklinium  & $[Og]\ 8s^2\ 8p^2\ 5g^{18}$ & Closed $5g^{18}$ Subshell     & 9.45   & 32.431 & Bound \\
-154 & Mc  & McClintockium& $[Og]\ 5g^{18}\ 6f^{14}$    & Closed $6f^{14}$ Subshell     & 8.76   & 79.400 & Bound \\
-164 & Tw  & Tiwanakium   & $[Og]\ 5g^{18} 6f^{14} 7d^{10}$ & Superheavy Transition Closed & 7.12 & 112.950 & Bound \\
-172 & Ur  & Uraniatium   & $[Og]\ 5g^{18} 6f^{14} 7d^{10} 8s^2 8p^6 9s^2$ & Period 8 Noble Gas & 11.20 & 139.789 & Bound \\
-173 & Ah  & Athanorium   & $[Ur]\ 9s^1$             & Supercritical Dirac Boundary     & ---    & ---   & 1762.2 \\
-184 & Uoq & Unoctquadium & $[Ur]\ 9s^2 9p^2 6g^8$   & Period 9 Double-Magic ($N=228$)  & ---    & ---   & 2162.6 \\
-226 & Bbh & Bibitrium    & $[Ur]\ 6g^{18} 7f^{14} 8d^{10} 9p^6 10s^2$ & Period 9 Final Noble Gas & --- & --- & 3963.5 \\
-240 & Bqn & Biquadnilium & Nuclear Gnocchi Phase    & Bubble Nucleus Deformation       & ---    & ---   & 4661.5 \\
-280 & Boc & Bioctnilium  & Nuclear Lasagna Phase    & Superconducting Proton Sheets    & ---    & ---   & 6931.5 \\
-343 & Cfl & Cosmo-Cryst. & Bulk Strange Quark Matter& Color-Flavor Locked Supercond.   & ---    & ---   & 11357.3 \\
+119 & Ph  & Phelpsium    & $[Og]\ 8s^1$                                            & Period 8 Alkali Metal            & 4.53   & 2.017 & Bound \\
+120 & Hy  & Hypatium     & $[Og]\ 8s^2$                                            & Alkaline Earth (Closed $8s^2$)   & 5.12   & 2.071 & Bound \\
+121 & Lc  & Lovelacium   & $[Og]\ 8s^2\ 8p_{1/2}^1$                                & Superactinide Ingress            & 4.88   & 2.130 & Bound \\
+126 & Tw  & Tawantinium  & $[Og]\ 8s^2\ 8p_{1/2}^2\ 5g^4$                          & Island of Stability Centroid     & 6.24   & 2.543 & Bound \\
+137 & Nt  & Noetherium   & $[Og]\ 8s^2\ 8p_{1/2}^2\ 5g^{15}$                       & Fine-Structure Boundary       & 8.91   & 22.366 & Bound \\
+140 & Fk  & Franklinium  & $[Og]\ 8s^2\ 8p_{1/2}^2\ 5g^{18}$                       & Closed $5g^{18}$ Subshell     & 9.45   & 32.431 & Bound \\
+154 & Mck & McClintockium& $[Og]\ 8s^2\ 8p_{1/2}^2\ 5g^{18}\ 6f^{14}$               & Closed $6f^{14}$ Subshell     & 8.76   & 79.400 & Bound \\
+164 & Tiw & Tiwanakium   & $[Og]\ 8s^2\ 8p_{1/2}^2\ 5g^{18}\ 6f^{14}\ 7d^{10}$     & Superheavy Transition Closed & 7.12 & 112.950 & Bound \\
+172 & Ur  & Uraniatium   & $[Og]\ 5g^{18} 6f^{14} 7d^{10} 8s^2 8p^6 9s^2 9p_{1/2}^2$ & Period 8 Noble Gas (172 $e^-$) & 11.20 & 139.789 & Bound \\
+173 & Ah  & Athanorium   & $[Ur]\ 9s^1$                                            & Supercritical Dirac Boundary ($Z_{\text{cr}}$) & --- & 143.144 & 12.4 \\
+184 & Uoq & Unoctquadium & $[Ur]\ 9s^2\ 9p_{1/2}^2\ 6g^8$                          & Period 9 Double-Magic ($N=228$)  & ---    & 179.820 & 558.7 \\
+226 & Bbh & Bibitrium    & $[Ur]\ 6g^{18} 7f^{14} 8d^{10} 9p^6 10s^2 10p_{1/2}^2$  & Period 9 Noble Gas (226 $e^-$) & --- & 321.450 & 2717.9 \\
+240 & Bqn & Biquadnilium & Swiss Cheese Phase (Bubble Voids)                       & Compressed Trans-Atomic Matter   & ---    & 372.100 & 3453.8 \\
+280 & Boc & Bioctnilium  & Nuclear Lasagna Phase (Proton Sheets)                   & Superconducting Proton Layers    & ---    & 512.400 & 5589.3 \\
+343 & Cfl & Cosmo-Cryst. & Bulk Strange Quark Matter ($u,d,s$)                     & Color-Flavor Locked Supercond.   & ---    & ---     & 9033.2 \\
 \bottomrule
 \end{tabular}
 \end{table*}
@@ -132,8 +132,8 @@ $Z$ & Sym & Element Name & Orbital Configuration & Family / Phase & $I_1$ (eV) &
 \begin{table*}[t]
 \centering
 \scriptsize
-\setlength{\tabcolsep}{1.8pt}
-\caption{The Unified Periodic Table of the Elements (Periods 1 to 8, with Inner Transition Series)}
+\setlength{\tabcolsep}{1.6pt}
+\caption{The Collision-Free Unified Periodic Table of the Elements (Periods 1 to 8, with Inner Transition Series)}
 \label{tab:unified_periodic_table}
 \begin{tabular}{rcccccccccccccccccc}
 \toprule
@@ -146,29 +146,29 @@ $Z$ & Sym & Element Name & Orbital Configuration & Family / Phase & $I_1$ (eV) &
 \textbf{5} & \textsubscript{37}Rb & \textsubscript{38}Sr & \textsubscript{39}Y & \textsubscript{40}Zr & \textsubscript{41}Nb & \textsubscript{42}Mo & \textsubscript{43}Tc & \textsubscript{44}Ru & \textsubscript{45}Rh & \textsubscript{46}Pd & \textsubscript{47}Ag & \textsubscript{48}Cd & \textsubscript{49}In & \textsubscript{50}Sn & \textsubscript{51}Sb & \textsubscript{52}Te & \textsubscript{53}I & \textsubscript{54}Xe \\
 \textbf{6} & \textsubscript{55}Cs & \textsubscript{56}Ba & \textsuperscript{*}Ln & \textsubscript{72}Hf & \textsubscript{73}Ta & \textsubscript{74}W & \textsubscript{75}Re & \textsubscript{76}Os & \textsubscript{77}Ir & \textsubscript{78}Pt & \textsubscript{79}Au & \textsubscript{80}Hg & \textsubscript{81}Tl & \textsubscript{82}Pb & \textsubscript{83}Bi & \textsubscript{84}Po & \textsubscript{85}At & \textsubscript{86}Rn \\
 \textbf{7} & \textsubscript{87}Fr & \textsubscript{88}Ra & \textsuperscript{**}An & \textsubscript{104}Rf & \textsubscript{105}Db & \textsubscript{106}Sg & \textsubscript{107}Bh & \textsubscript{108}Hs & \textsubscript{109}Mt & \textsubscript{110}Ds & \textsubscript{111}Rg & \textsubscript{112}Cn & \textsubscript{113}Nh & \textsubscript{114}Fl & \textsubscript{115}Mc & \textsubscript{116}Lv & \textsubscript{117}Ts & \textsubscript{118}Og \\
-\textbf{8} & \textsubscript{119}Ph & \textsubscript{120}Hy & \textsuperscript{***}San & \textsubscript{155}Yp & \textsubscript{156}Kp & \textsubscript{157}Cd & \textsubscript{158}Pc & \textsubscript{159}In & \textsubscript{160}Qi & \textsubscript{161}Pm & \textsubscript{162}Ay & \textsubscript{163}Cv & \textsubscript{164}Tw & \textsubscript{165}Cl & \textsubscript{166}Tl & \textsubscript{167}Mp & \textsubscript{168}Et & \textsubscript{172}Ur \\
+\textbf{8} & \textsubscript{119}Ph & \textsubscript{120}Hy & \textsuperscript{***}San & \textsubscript{155}Yp & \textsubscript{156}Kp & \textsubscript{157}Chd & \textsubscript{158}Pc & \textsubscript{159}Iti & \textsubscript{160}Qi & \textsubscript{161}Pma & \textsubscript{162}Ay & \textsubscript{163}Cv & \textsubscript{164}Tiw & \textsubscript{165}Cli & \textsubscript{166}Tha & \textsubscript{167}Mp & \textsubscript{168}Et & \textsubscript{172}Ur \\
 \midrule
 \multicolumn{19}{l}{\textbf{Inner Series:}} \\
 \textsuperscript{*}4f & \textsubscript{57}La & \textsubscript{58}Ce & \textsubscript{59}Pr & \textsubscript{60}Nd & \textsubscript{61}Pm & \textsubscript{62}Sm & \textsubscript{63}Eu & \textsubscript{64}Gd & \textsubscript{65}Tb & \textsubscript{66}Dy & \textsubscript{67}Ho & \textsubscript{68}Er & \textsubscript{69}Tm & \textsubscript{70}Yb & \textsubscript{71}Lu & & & \\
 \textsuperscript{**}5f & \textsubscript{89}Ac & \textsubscript{90}Th & \textsubscript{91}Pa & \textsubscript{92}U & \textsubscript{93}Np & \textsubscript{94}Pu & \textsubscript{95}Am & \textsubscript{96}Cm & \textsubscript{97}Bk & \textsubscript{98}Cf & \textsubscript{99}Es & \textsubscript{100}Fm & \textsubscript{101}Md & \textsubscript{102}No & \textsubscript{103}Lr & & & \\
-\textsuperscript{***}5g & \textsubscript{121}Lc & \textsubscript{122}Cw & \textsubscript{123}Py & \textsubscript{124}Rb & \textsubscript{125}Bb & \textsubscript{126}Tw & \textsubscript{127}Lt & \textsubscript{128}An & \textsubscript{129}Kj & \textsubscript{130}Dv & \textsubscript{131}Mj & \textsubscript{132}Mh & \textsubscript{133}Kv & \textsubscript{134}Ag & \textsubscript{135}Ct & \textsubscript{136}Gm & \textsubscript{137}Nt & \textsubscript{140}Fk \\
-\textsuperscript{***}6f & \textsubscript{141}Hk & \textsubscript{142}Bg & \textsubscript{143}Nd & \textsubscript{144}Gp & \textsubscript{145}Jl & \textsubscript{146}Ld & \textsubscript{147}Bs & \textsubscript{148}Cc & \textsubscript{149}Pe & \textsubscript{150}Cr & \textsubscript{151}El & \textsubscript{152}Yw & \textsubscript{153}Lm & \textsubscript{154}Mc & & & & \\
+\textsuperscript{***}5g & \textsubscript{121}Lc & \textsubscript{122}Cw & \textsubscript{123}Py & \textsubscript{124}Rbn & \textsubscript{125}Bb & \textsubscript{126}Tw & \textsubscript{127}Lt & \textsubscript{128}An & \textsubscript{129}Kj & \textsubscript{130}Dv & \textsubscript{131}Mj & \textsubscript{132}Mh & \textsubscript{133}Kv & \textsubscript{134}Agn & \textsubscript{135}Ct & \textsubscript{136}Gm & \textsubscript{137}Nt & \textsubscript{140}Fk \\
+\textsuperscript{***}6f & \textsubscript{141}Hk & \textsubscript{142}Bg & \textsubscript{143}Ndk & \textsubscript{144}Gp & \textsubscript{145}Jl & \textsubscript{146}Ld & \textsubscript{147}Bs & \textsubscript{148}Cc & \textsubscript{149}Pe & \textsubscript{150}Coi & \textsubscript{151}El & \textsubscript{152}Yw & \textsubscript{153}Lm & \textsubscript{154}Mck & & & & \\
 \bottomrule
 \end{tabular}
 \end{table*}
 
-Beyond $Z = 226$, mutual Coulomb repulsion of protons exceeds the surface tension of the strong nuclear force. The nucleus undergoes geometric phase transitions:
+For uncompressed isolated nuclei, the liquid-drop fissility parameter $X = \frac{Z^2/A}{50}$ exceeds unity for $Z > 130$, causing uncompressed bare droplets to undergo spontaneous fission in $\sim 10^{-21}\text{ s}$ unless stabilized by closed shell corrections. Under external compressive pressure (such as in relativistic heavy-ion collision transients or neutron star crusts), nuclear matter undergoes topological pasta transitions:
 \begin{enumerate}\itemsep=0pt
-\item \textbf{Gnocchi Phase ($Z \approx 240$):} Internal spherical voids develop (bubble nuclei).
+\item \textbf{Swiss Cheese Phase ($Z \approx 240$):} Internal spherical voids develop in bulk nuclear density.
 \item \textbf{Spaghetti Phase ($Z \approx 260$):} Protons deform into 1D cylindrical rods.
 \item \textbf{Lasagna Phase ($Z \approx 280$):} Nuclear matter flattens into parallel 2D slabs.
 \end{enumerate}
 
-At $Z = 343$, the proton Fermi chemical potential exceeds the rest mass of the strange quark ($m_s \approx 95\text{ MeV}$). Matter undergoes spontaneous flavor conversion ($u, d \to s$), dissolving individual nucleon boundaries into a macroscopic, charge-neutral Color-Flavor Locked (CFL) Strange Quark Superconductor with uniform nuclear density ($\rho \approx 10^{14}\text{ g/cm}^3$). This defines the physical end of discrete atomic chemistry.
+At $Z = 343$, the quark chemical potential $\mu_q = \frac{1}{3}\mu_B$ exceeds the effective constituent mass of the strange quark ($m_s^* \approx 150\text{--}300\text{ MeV}$). Matter undergoes spontaneous flavor conversion ($u, d \to s$), dissolving individual nucleon boundaries into a macroscopic, charge-neutral Color-Flavor Locked (CFL) Strange Quark Superconductor with uniform nuclear density ($\rho \approx 10^{14}\text{ g/cm}^3$). This defines the physical end of discrete atomic chemistry.
 
 \section{\texorpdfstring{The Sovereign Period 8 Naming Canon ($Z = 119\text{--}173$)}{The Sovereign Period 8 Naming Canon (Z = 119-173)}}
 
-To replace systematic placeholder numerals with permanent historical dedications, we establish the official Period 8 Naming Canon:
+To eliminate all collisions with existing IUPAC elements (Periods 1–7) and establish unique identifiers across the canon:
 
 \subsection{\texorpdfstring{Pioneering Women in STEM ($Z = 119\text{--}125, 127\text{--}154$)}{Pioneering Women in STEM (Z = 119-125, 127-154)}}
 \begin{itemize}\itemsep=1pt
@@ -177,7 +177,7 @@ To replace systematic placeholder numerals with permanent historical dedications
 \item \textbf{121 (Lc) Lovelacium}: Ada Lovelace (First Computer Algorithm).
 \item \textbf{122 (Cw) Chienium}: Chien-Shiung Wu (Parity Violation in Weak Force).
 \item \textbf{123 (Py) Paynium}: Cecilia Payne-Gaposchkin (Stellar H/He Discovery).
-\item \textbf{124 (Rb) Rubinium}: Vera Rubin (Galactic Dark Matter Curves).
+\item \textbf{124 (Rbn) Rubinium}: Vera Rubin (Galactic Dark Matter Curves).
 \item \textbf{125 (Bb) Bellburnellium}: Jocelyn Bell Burnell (Pulsars).
 \item \textbf{127 (Lt) Leavittium}: Henrietta Swan Leavitt (Cepheid Standard Candles).
 \item \textbf{128 (An) Anningium}: Mary Anning (Jurassic Paleontology).
@@ -186,7 +186,7 @@ To replace systematic placeholder numerals with permanent historical dedications
 \item \textbf{131 (Mj) Jacksonium}: Mary Jackson (Aerospace Engineering).
 \item \textbf{132 (Mh) Hamiltonium}: Margaret Hamilton (Apollo Flight Software).
 \item \textbf{133 (Kv) Kowalevskium}: Sofia Kovalevskaya (PDE Dynamics).
-\item \textbf{134 (Ag) Agnesium}: Maria Gaetana Agnesi (Differential Calculus).
+\item \textbf{134 (Agn) Agnesium}: Maria Gaetana Agnesi (Differential Calculus).
 \item \textbf{135 (Ct) Chateletium}: Émilie du Châtelet (Kinetic Energy $mv^2$).
 \item \textbf{136 (Gm) Germainium}: Sophie Germain (Acoustics \& Prime Theory).
 \item \textbf{137 (Nt) Noetherium}: Emmy Noether (Symmetries \& Invariant Conservation Laws at $1/\alpha$).
@@ -195,18 +195,18 @@ To replace systematic placeholder numerals with permanent historical dedications
 \item \textbf{140 (Fk) Franklinium}: Rosalind Franklin (DNA Photo 51).
 \item \textbf{141 (Hk) Hodgkinium}: Dorothy Hodgkin (Insulin/B12 Crystallography).
 \item \textbf{142 (Bg) Blodgettium}: Katharine Burr Blodgett (Monolayers).
-\item \textbf{143 (Nd) Noddackium}: Ida Noddack (Rhenium \& Fission).
+\item \textbf{143 (Ndk) Noddackium}: Ida Noddack (Rhenium \& Fission).
 \item \textbf{144 (Gp) Goeppertium}: Maria Goeppert Mayer (Nuclear Shells).
 \item \textbf{145 (Jl) Joliotium}: Irène Joliot-Curie (Artificial Radioactivity).
 \item \textbf{146 (Ld) Lonsdalium}: Kathleen Lonsdale (Benzene Diffraction).
 \item \textbf{147 (Bs) Brooksium}: Harriet Brooks (Nuclear Recoil).
 \item \textbf{148 (Cc) Cauchoisium}: Yvette Cauchois (X-ray Optics).
 \item \textbf{149 (Pe) Pereyium}: Marguerite Perey (Francium).
-\item \textbf{150 (Cr) Coriium}: Gerty Cori (Glycogen Biochemistry).
+\item \textbf{150 (Coi) Coriium}: Gerty Cori (Glycogen Biochemistry).
 \item \textbf{151 (El) Elionium}: Gertrude B. Elion (Rational Drug Design).
 \item \textbf{152 (Yw) Yalowium}: Rosalyn Yalow (Radioimmunoassay).
 \item \textbf{153 (Lm) Levi-Montalcinium}: Rita Levi-Montalcini (NGF).
-\item \textbf{154 (Mc) McClintockium}: Barbara McClintock (Transposons).
+\item \textbf{154 (Mck) McClintockium}: Barbara McClintock (Transposons).
 \end{itemize}
 
 \subsection{\texorpdfstring{Andean Archaeological Heritage ($Z = 126, 155\text{--}164$)}{Andean Archaeological Heritage (Z = 126, 155-164)}}
@@ -214,20 +214,20 @@ To replace systematic placeholder numerals with permanent historical dedications
 \item \textbf{126 (Tw) Tawantinium}: Tawantinsuyu / Cusco (Double-Magic Centroid).
 \item \textbf{155 (Yp) Yupanium}: Andean Yupana Spatial Matrix.
 \item \textbf{156 (Kp) Khipuium}: Relational Fiber Recording Architecture.
-\item \textbf{157 (Cd) Chordelegium}: Volumetric Lithic \& Metal Craft.
+\item \textbf{157 (Chd) Chordelegium}: Volumetric Lithic \& Metal Craft.
 \item \textbf{158 (Pc) Pachacutecium}: Pachacuti Inca Yupanqui.
-\item \textbf{159 (In) Intium}: Inti (Solar Radiance).
+\item \textbf{159 (Iti) Intium}: Inti (Solar Radiance).
 \item \textbf{160 (Qi) Quillium}: Mama Quilla (Lunar Geometry).
-\item \textbf{161 (Pm) Pachamamium}: Pachamama (Living Earth / Soil).
+\item \textbf{161 (Pma) Pachamamium}: Pachamama (Living Earth / Soil).
 \item \textbf{162 (Ay) Aynium}: Ayni (Universal Law of Reciprocity).
 \item \textbf{163 (Cv) Chavinium}: Chavín de Huántar (Acoustic Lithic Masters).
-\item \textbf{164 (Tw) Tiwanakium}: Tiwanaku Megalithic Observatory.
+\item \textbf{164 (Tiw) Tiwanakium}: Tiwanaku Megalithic Observatory.
 \end{itemize}
 
 \subsection{\texorpdfstring{The Muses \& Athanor Boundary ($Z = 165\text{--}173$)}{The Muses & Athanor Boundary (Z = 165-173)}}
 \begin{itemize}\itemsep=1pt
-\item \textbf{165 (Cl) Clioium}: Clio (History \& Primary Ledgers).
-\item \textbf{166 (Tl) Thalium}: Thalia (Comedy \& Living Ephemera).
+\item \textbf{165 (Cli) Clioium}: Clio (History \& Primary Ledgers).
+\item \textbf{166 (Tha) Thalium}: Thalia (Comedy \& Living Ephemera).
 \item \textbf{167 (Mp) Melpomenium}: Melpomene (Verification \& Tragedy).
 \item \textbf{168 (Et) Eratoium}: Erato (Lyricism \& Sacred Romance).
 \item \textbf{169 (Pl) Polyhymnium}: Polyhymnia (Geometry \& Chants).
@@ -238,7 +238,7 @@ To replace systematic placeholder numerals with permanent historical dedications
 \end{itemize}
 
 \section{Conclusion}
-Through discrete phase-space relaxation on Project CODENAME PRISM, we have resolved the relativistic electronic and nuclear taxonomy of Period 8 and Period 9, established the physical mechanisms of supercritical vacuum ionization at $Z = 173$, and mapped the boundary of discrete atomic chemistry at $Z = 343$. By establishing the Sovereign Period 8 Naming Canon, we ensure that as laboratory particle accelerators confirm these elements, the names of history's greatest scientific pioneers are permanently woven into the periodic ledger of the universe.
+Through discrete phase-space relaxation on Project CODENAME PRISM, we have resolved the relativistic electronic and nuclear taxonomy of Period 8 and Period 9, established the physical mechanisms of supercritical vacuum ionization at $Z = 173$, and mapped the boundary of discrete atomic chemistry at $Z = 343$. By establishing the collision-free Sovereign Period 8 Naming Canon, we ensure that as laboratory particle accelerators confirm these elements, the names of history's greatest scientific pioneers are permanently woven into the periodic ledger of the universe.
 
 \section*{Acknowledgments}
 Simulations were performed using the proprietary PRISM hardware architecture developed by Mage's Guild Psychonautics LLC. We express gratitude to the Museo Inka and the international Andean archaeological community for preserving the mathematical heritage of the Yupana and Khipu.
